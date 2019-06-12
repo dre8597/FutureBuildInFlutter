@@ -9,11 +9,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Benchmark Dashboard',
       theme: new ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.red,
       ),
-      home: new MyHomePage(title: 'Users'),
+      home: new MyHomePage(title: 'Benchmarks'),
     );
   }
 }
@@ -109,7 +109,8 @@ class DetailPage extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           title: Text(user.name),
-        )
+        ),
+        body: Center(child: Text(user.about)),
     );
   }
 }
